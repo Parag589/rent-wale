@@ -17,68 +17,51 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9e5ba2e3f5.js"></script>
     <title>Rent-Wale</title>
+    <style>
+      .nav__height{
+        height: 600px;
+      }
+      @media(max-width:500px){
+        .nav__height{
+        height: 200px;
+      }
+      }
+    </style>
 </head>
-<body>
-
-  <nav  class="navbar navbar-expand-lg navbar-fixed-top nav-color">
-    <div class="container-fluid">
-      <img style="width: 50px;" src="./images/logo3.png" alt="">
-      <a class="navbar-brand" style="color: rgb(255, 255, 255); padding-left: 10px; margin-right: 0px;" href="#">Rent</a><a href="#" style="color: rgb(63, 112, 192); margin-left: 0; margin-right:-40px; " class="navbar-brand">wale</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div  class="collapse navbar-collapse navbar-links" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a style="color: rgba(240, 248, 255, 0.722); font-weight:400;" class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a style="color: rgba(240, 248, 255, 0.722); font-weight:400;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Products
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">AC</a></li>
-              <li><hr class="dropdown-divider"></li> 
-              <li><a class="dropdown-item" href="#">Fridge</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="./Comming Soon/smoke.html" target="_blank" style="text-decoration: none;" class="dropdown-item">Washing Macine</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="./Comming Soon/smoke.html" target="_blank" style="text-decoration: none;" class="dropdown-item">Induction</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="./Comming Soon/smoke.html" target="_blank" style="text-decoration: none;" class="dropdown-item">Mixer</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="./Comming Soon/smoke.html" target="_blank" style="text-decoration: none;" class="dropdown-item">Avon</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="./Comming Soon/smoke.html" target="_blank" style="text-decoration: none;" class="dropdown-item">TV</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a href="./Comming Soon/smoke.html" target="_blank" style="text-decoration: none;" class="dropdown-item">Computer</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
-              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            </ul>
-          </li>
-          <li  class="nav-item">
-            <a  style="color: rgba(240, 248, 255, 0.722); font-weight:400;" class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a style="color: rgba(240, 248, 255, 0.722); font-weight:400;" class="nav-link" href="#">Contact Us</a>
-          </li>
-        </ul>
+<nav class="navbar" style="background-color: rgb(56, 52, 52);">
+  <div class="navbar-container" style="width: 100%;"  >
+      <input style="color: aliceblue;" type="checkbox" name="" id="">
+      <div style="color: aliceblue;" class="hamburger-lines">
+          <span style="color: aliceblue;" class="line line1"></span>
+          <span style="color: aliceblue;" class="line line2"></span>
+          <span style="color: aliceblue;" class="line line3"></span>
       </div>
-    </div>
-  </nav>
-  
+      
+      <ul class="menu-items" style="font-family: Audiowide;">
+        <li style="font-family: Audiowide;"><a href="index.html">Home</a></li>
+        <!-- <li style="font-family: Audiowide;"><a href="product_pages/about_us.html">Services</a></li> -->
+        <li style="font-family: Audiowide;"><a href="#about_us">About us</a></li>
+        <li style="font-family: Audiowide;"><a href="./contact_us/contact.html">Contact us</a></li>
+      </ul>
+      <a href="index.html">
+        <img class="logo" style="width: 50px;" src="./images/logo3.png" alt="">
+      </a>
+  </div>
+</nav>
+  <!-- slide-height -->
+
+
   <!-- ------------------------slide show-------------------- -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade nav__height">
       <div class="carousel-inner">
-        <div style="height: 690px;" class="carousel-item active">
-          <img style="height: 690px;"  src="./images/Beat-the-Heat.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active nav__height">
+          <img src="./images/Beat-the-Heat_cleanup_cleanup.jpg" class="d-block w-100 nav__height" alt="...">
         </div>
-        <div style="height: 690px;" class="carousel-item">
-          <img style="height: 690px;"  src="./images/bann.png" class=" d-block w-100" alt="...">
+        <div  class="carousel-item nav__height">
+          <img src="./images/bann2.png" class=" d-block w-100 nav__height" alt="...">
         </div>
-        <div style="height: 690px;"  class="carousel-item">
-          <img style="height: 690px;"  src="./images/rent-3.png" class="d-block w-100" alt="...">
+        <div  class="carousel-item nav__height">
+          <img src="./images/rent-3.png" class="d-block w-100 nav__height" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -101,8 +84,327 @@
       <p>So, sit back and relax while we take care of your rental needs. Browse our website to learn more about our rental services and products, and feel free to contact us for any queries or assistance. Thank you for choosing us as your rental partner!</p>
     </div>
 
+
+
+    <div style="z-index: 1;" class="dropdown">
+      <input style="z-index: 1;" type="checkbox" id="dropdown">
+    
+      <label style="z-index: 1;" class="dropdown__face" for="dropdown">
+        <div style="z-index: 1;" class="dropdown__text"><b style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">We are Available Here</b></div>
+    
+        <div style="z-index: 1;" class="dropdown__arrow"></div>
+      </label>
+    
+      <ul style="z-index: 1;" class="dropdown__items">
+        <li style="z-index: 1;">Washing Machine on Rent, Washing Machine on Rent Faridabad, Washing Machine on Rent Noida, Washing Machine on Rent Ghaziabad, Washing Machine on Rent Delhi, Washing Machine on Rent Raj Nagar Extension, Washing Machine on Rent Vashundhara, Washing Machine on Rent Vaishali, Washing Machine on Rent Indirapuram, Washing Machine on Rent Sahibabad, Washing Machine on Rent Shakti Khand, Washing Machine on Rent Niti Khand, Washing Machine on Rent Kaushambi, Washing Machine on Rent Alpha- 1, 2, Washing Machine on Rent Beta- 1, 2, Washing Machine on Rent Delta- 1, 2, 3, Washing Machine on Rent Jagat Farm, Washing Machine on Rent Sector- 62, 61, 63 Noida, Washing Machine on Rent Sector- 60, 64, 65 Noida, Washing Machine on Rent Sector- 70, 73 Noida, Washing Machine on Rent Sector- 71, 72 Noida, Washing Machine on Rent Sector- 10, 11, 12 Noida, Washing Machine on Rent Sector- 13, 14 Noida, Washing Machine on Rent Sector- 15, 16 Noida, Washing Machine on Rent Sector- 17, 18 Noida, Washing Machine on Rent Sector- 19, 20 Noida, Washing Machine on Rent Sector- 21, 22 Noida, Washing Machine on Rent Sector- 23, 24 Noida, Washing Machine on Rent Sector- 25, 26 Noida, Washing Machine on Rent Sector- 27, 28 Noida, Washing Machine on Rent Sector- 29, 30 Noida, Washing Machine on Rent Sector- 31, 32 Noida, Washing Machine on Rent Sector- 33, 34 Noida, Washing Machine on Rent Sector- 35, 36 Noida, Washing Machine on Rent Sector- 37, 38 Noida, Washing Machine on Rent Sector- 39, 40 Noida, Washing Machine on Rent Sector- 41, 42 Noida, Washing Machine on Rent Sector- 43, 44 Noida, Washing Machine on Rent Sector- 45, 46 Noida, Washing Machine on Rent Sector- 47, 48 Noida, Washing Machine on Rent Sector- 49, 50 Noida, Washing Machine on Rent Sector- 51, 52 Noida, Washing Machine on Rent Sector- 53, 54 Noida, Washing Machine on Rent Sector- 55, 56 Noida, Washing Machine on Rent Sector- 57, 58 Noida, Washing Machine on Rent Sector- 59,60 Noida, Washing Machine on Rent Sector- 61, 62 Noida, Washing Machine on Rent Sector- 63, 64 Noida, Washing Machine on Rent Sector- 65, 66 Noida, Washing Machine on Rent Sector- 67, 68 Noida, Washing Machine on Rent Sector- 69,70 Noida, Washing Machine on Rent Sector- 71, 72 Noida, Washing Machine on Rent Sector- 73, 74 Noida, Washing Machine on Rent Sector- 75, 76 Noida, Washing Machine on Rent Sector- 77, 78 Noida, Washing Machine on Rent Sector- 79, 80 Noida, Washing Machine on Rent Sector- 81, 82 Noida, Washing Machine on Rent Sector- 83, 84 Noida, Washing Machine on Rent Sector- 85, 86 Noida, Washing Machine on Rent Sector- 87, 88 Noida, Washing Machine on Rent Sector- 89, 90 Noida, Washing Machine on Rent Sector- 91, 92 Noida, Washing Machine on Rent Sector- 93, 94 Noida, Washing Machine on Rent Sector- 95, 96 Noida, Washing Machine on Rent Sector- 97, 98 Noida, Washing Machine on Rent Sector- 99, 100 Noida, Washing Machine on Rent Sector- 101, 102 Noida, Washing Machine on Rent Sector- 103, 104 Noida, Washing Machine on Rent Sector- 105, 106 Noida, Washing Machine on Rent Sector- 107, 108 Noida, Washing Machine on Rent Sector- 109, 110 Noida, Washing Machine on Rent Sector- 111, 112 Noida, Washing Machine on Rent Sector- 113, 114 Noida, Washing Machine on Rent Sector- 115, 116 Noida, Washing Machine on Rent Sector- 117, 118 Noida, Washing Machine on Rent Sector- 119, 120 Noida, Washing Machine on Rent Sector- 121, 122 Noida, Washing Machine on Rent Sector- 123, 124 Noida, Washing Machine on Rent Sector- 125, 126 Noida, Washing Machine on Rent Sector- 127, 128 Noida, Washing Machine on Rent Sector- 129, 130 Noida, Washing Machine on Rent Sector- 131, 132 Noida, Washing Machine on Rent Sector- 133, 134 Noida, Washing Machine on Rent Sector- 135, 136 Noida, Washing Machine on Rent Sector- 137, 138 Noida, Washing Machine on Rent Sector- 139, 140 Noida, Washing Machine on Rent Sector- 141, 142 Noida, Washing Machine on Rent Sector- 143, 144 Noida, Washing Machine on Rent Sector- 145, 146 Noida, Washing Machine on Rent Sector- 147, 148 Noida, Washing Machine on Rent Sector- 149, 150 Noida, Washing Machine on Rent Shalimar Garden, Washing Machine on Rent Mohan Nagar, Washing Machine on Rent Lajpat Nagar, Washing Machine on Rent Kavi Nagar, Washing Machine on Rent Rajendra Nagar, Washing Machine on Rent Vijay Nagar, Washing Machine on Rent Sanjay Nagar, Washing Machine on Rent Govindpuram, Washing Machine on Rent Vaishali Sector 1, 2, Washing Machine on Rent Vaishali Sector 3, 4, Washing Machine on Rent Vaishali Sector 5, 6, Washing Machine on Rent Vaishali Sector 7, 8, Washing Machine on Rent Vaishali Sector 9, 10, Washing Machine on Rent Vasundhara Sector 1, 2, Washing Machine on Rent Vasundhara Sector 3, 4, Washing Machine on Rent Vasundhara Sector 5, 6, Washing Machine on Rent Vasundhara Sector 7, 8, Washing Machine on Rent Vasundhara Sector 9, 10, Washing Machine on Rent Vasundhara Sector 11, 12, Washing Machine on Rent Vasundhara Sector 13, 14, Washing Machine on Rent Vasundhara Sector 15, 16, Washing Machine on Rent Vasundhara Sector 17, Washing Machine on Rent Vasundhara Sector 18, Washing Machine on Rent Vasundhara Sector 19, Washing Machine on Rent Vasundhara Sector 20, Washing Machine on Rent Surya Nagar, Washing Machine on Rent Sonia vihar, Washing Machine on Rent Siddharth Nagar, Washing Machine on Rent Nehru Nagar, Washing Machine on Rent Lohiya Nagar, Washing Machine on Rent Pratap Vihar, Washing Machine on Rent Crossing Republik, Washing Machine on Rent Lal Kuan, Washing Machine on Rent Dlf Ankur Vihar, Washing Machine on Rent Dlf Dilshad Extension.</li>
+        <!-- <li>😺</li>
+        <li>😽</li>
+        <li>😎</li>
+        <li>🤗</li> -->
+      </ul>
+    </div>
+    
+    <svg>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+      </filter>
+    </svg>
+
+    
+<div id='table'>
+
+  <div id='box'>
+    <table class="table table-dark" style="text-align: center;">
+      <table class="table table-dark" style="text-align: center;">
+        <thead class="table__heading">
+          <p class="table__heading">Window Air Conditioner</p>
+        </thead>
+        <tr>
+          <th scope="row" class="table-active">Appliances</th>
+          <td colspan="2" class="table-active">Type</td>
+          <td class="table-active">Rent Charges</td>
+        </tr>
+        <tr>
+          <th scope="row">Window Air Conditioner</th>
+          <td colspan="2" >1 Ton</td>
+          <td>6500/- 1-Season + 500 Installasion</td>
+        </tr>
+        <tr>
+          <th scope="row">Window Air Conditioner</th>
+          <td colspan="2">1.5 Ton</td>
+          <td>7500/- 1-Season + 500 Installasion</td>
+        </tr>
+        <tr>
+          <th scope="row">Window Air Conditioner</th>
+          <td colspan="2">2 Ton</td>
+          <td>8000/- 1-Season + 500 Installasion</td>
+        </tr>
+        <tr>
+          <th scope="row">Refundable Security Fees</th>
+          <td colspan="2"> - </td>
+          <td>2500/-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div id='box'>
+    <table class="table table-dark" style="text-align: center;">
+      <thead class="table__heading">
+        <P class="table__heading">Split Air Conditioner</P>
+      </thead>
+      <tr>
+        <th scope="row" class="table-active">Appliances</th>
+        <td colspan="2" class="table-active">Type</td>
+        <td class="table-active">Rent Charges</td>
+      </tr>
+      <tr>
+        <th scope="row">Split Air Conditioner</th>
+        <td colspan="2" >1 Ton</td>
+        <td>10500/- 1-Season + 1500 Installasion</td>
+      </tr>
+      <tr>
+        <th scope="row">Split Air Conditioner</th>
+        <td colspan="2">1.5 Ton</td>
+        <td>12000/- 1-Season + 1500 Installasion</td>
+      </tr>
+      <tr>
+        <th scope="row">Split Air Conditioner</th>
+        <td colspan="2">2 Ton</td>
+        <td>13000/- 1-Season + 1500 Installasion</td>
+      </tr>
+      <tr>
+        <th scope="row">Refundable Security Fees</th>
+        <td colspan="2"> - </td>
+        <td>3000/-</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+
+  <div id='box'>
+    <table class="table table-dark" style="text-align: center;">
+      <table class="table table-dark" style="text-align: center;">
+        <thead class="table__heading">
+          <p class="table__heading">Top Load Washing Machine</p>
+        </thead>
+      <tr>
+        <th scope="row" class="table-active">Appliances</th>
+        <td colspan="2" class="table-active">Month</td>
+        <td class="table-active">Rent Charges</td>
+      </tr>
+      <tr>
+        <th scope="row">Top Load</th>
+        <td colspan="2" >12</td>
+        <td>599/- Month </td>
+      </tr>
+      <tr>
+        <th scope="row">Top Load</th>
+        <td colspan="2">9</td>
+        <td>600/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">Top Load</th>
+        <td colspan="2">6</td>
+        <td>799/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">Top Load</th>
+        <td colspan="2">3</td>
+        <td>949/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">Refundable Security Fees</th>
+        <td colspan="2"> - </td>
+        <td>2000/-</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
+
+  <div id='box'>
+    <table class="table table-dark" style="text-align: center;">
+      <table class="table table-dark" style="text-align: center;">
+        <thead class="table__heading">
+          <p class="table__heading">Front Load Washing Machine</p>
+        </thead>
+      <tr>
+        <th scope="row" class="table-active">Appliances</th>
+        <td colspan="2" class="table-active">Month</td>
+        <td class="table-active">Rent Charges</td>
+      </tr>
+      <tr>
+        <th scope="row">Front Load</th>
+        <td colspan="2" >12</td>
+        <td>699/- Month </td>
+      </tr>
+      <tr>
+        <th scope="row">Front Loadr</th>
+        <td colspan="2">9</td>
+        <td>799/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">Front Load</th>
+        <td colspan="2">6</td>
+        <td>899/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">Front Load</th>
+        <td colspan="2">3</td>
+        <td>1149/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">Refundable Security Fees</th>
+        <td colspan="2"> - </td>
+        <td>2500/-</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
+  </div>
    
 
+
+
+  
+    
+<div id='table'>
+
+  <div id='box'>
+    <table class="table table-dark" style="text-align: center;">
+      <table class="table table-dark" style="text-align: center;">
+        <thead class="table__heading">
+          <p class="table__heading">Refrigerator (Single Door)</p>
+        </thead>
+        <tr>
+          <th scope="row" class="table-active">Appliance Type</th>
+          <td colspan="2" class="table-active">Month</td>
+          <td class="table-active">Rent Charges</td>
+        </tr>
+        <tr>
+          <th scope="row">Single Door</th>
+          <td colspan="2" >12</td>
+          <td>510/- Month</td>
+        </tr>
+        <tr>
+          <th scope="row">Single Door</th>
+          <td colspan="2">9</td>
+          <td>570/- Month</td>
+        </tr>
+        <tr>
+          <th scope="row">Single Door</th>
+          <td colspan="2">6</td>
+          <td>699/- Month</td>
+        </tr>
+        <tr>
+          <th scope="row">Single Door</th>
+          <td colspan="2">3</td>
+          <td>799/- Month</td>
+        </tr>
+        <tr>
+          <th scope="row">Refundable Security Money:</th>
+          <td colspan="2"> - </td>
+          <td>2000/-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div id='box'>
+    <table class="table table-dark" style="text-align: center;">
+      <thead class="table__heading">
+        <P class="table__heading">Refrigerator (200-350 Liter)</P>
+      </thead>
+      <tr>
+        <th scope="row" class="table-active">Appliances</th>
+        <td colspan="2" class="table-active">Month</td>
+        <td class="table-active">Rent Charges</td>
+      </tr>
+      <tr>
+        <th scope="row">200-350 Liter</th>
+        <td colspan="2" >12</td>
+        <td>760/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">200-350 Liter</th>
+        <td colspan="2">9</td>
+        <td>849/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">200-350 Liter</th>
+        <td colspan="2">6</td>
+        <td>999/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">200-350 Liter</th>
+        <td colspan="2">3</td>
+        <td>1200/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">Refundable Security Money:</th>
+        <td colspan="2"> - </td>
+        <td>2500/-</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+
+  <div id='box'>
+    <table class="table table-dark" style="text-align: center;">
+      <table class="table table-dark" style="text-align: center;">
+        <thead class="table__heading">
+          <p class="table__heading">Refrigerator (350-550 Liter)</p>
+        </thead>
+      <tr>
+        <th scope="row" class="table-active">Appliances Type</th>
+        <td colspan="2" class="table-active">Month</td>
+        <td class="table-active">Rent Charges</td>
+      </tr>
+      <tr>
+        <th scope="row">350-550 Litre</th>
+        <td colspan="2" >12</td>
+        <td>799/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">350-550 Litre</th>
+        <td colspan="2">9</td>
+        <td>899/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">350-550 Litre</th>
+        <td colspan="2">7</td>
+        <td>999/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">350-550 Litre</th>
+        <td colspan="2">6</td>
+        <td>1299/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">350-550 Litre</th>
+        <td colspan="2">3</td>
+        <td>1588/- Month</td>
+      </tr>
+      <tr>
+        <th scope="row">Refundable Security Fees</th>
+        <td colspan="2"> - </td>
+        <td>2500/-</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
+  
+  </div>
+   
 <!--     
     <main id=app>
       <h1 class="featured-products-heading">Featured Products</h1>
@@ -120,8 +422,8 @@
   <h1 class="featured-products-heading">Featured Products</h1>
     <div style="padding-bottom: 100px;" class="card-group">
       
-      <div style="background-color: transparent; border-color: transparent;" class="card">
-        <a style="text-decoration: none;" href="./Comming Soon/smoke.html" target="_blank"></a>
+      <div style="background-color: transparent; border-color: transparent; z-index: 0;" class="card">
+        <a style="text-decoration: none;" target="_blank" href="./ac/id-page.html">
         <div style="margin-left: auto; margin-right: auto;" class="f-card charizard animated">
         <img style="width: 280px; height: 100%;" src="./images/ac-1.jpeg" alt="">
        </div>
@@ -132,8 +434,8 @@
       </div>
 
       
-        <div style="background-color: transparent; border-color: transparent;"  class="card">
-          <a style="text-decoration: none;" href="./Comming Soon/smoke.html" target="_blank">
+        <div style="background-color: transparent; border-color: transparent; z-index: 0;"  class="card">
+          <a style="text-decoration: none;"  target="_blank" href="./fridge/id-page.html">
           <div style="margin-left: auto; margin-right: auto;" class="f-card pika animated">
             <img style="width: 340px; height: 100%; margin-left: -30px;" src="./images/fridege-1.jpeg" alt="">
           </div>
@@ -145,7 +447,7 @@
       
 
       <div style="background-color: transparent; border-color: transparent;"  class="card">
-        <a style="text-decoration: none;" href="./Comming Soon/smoke.html" target="_blank">
+        <a style="text-decoration: none;" target="_blank" href="./washing-machine/id-page.html">
           <div style="margin-left: auto; margin-right: auto;" class="f-card eevee animated">
             <img style="width: 280px; height:100%;" src="./images/washing machine.jpg" alt="">
           </div>
@@ -155,35 +457,27 @@
         </a>
       </div>
 
-      <div style="background-color: transparent; border-color: transparent;"  class="card">
-        <a style="text-decoration: none;" href="./Comming Soon/smoke.html" target="_blank">
-          <div style="margin-left: auto; margin-right: auto;" class="f-card mewtwo animated">
-            <img style="width: 280px; height: 100%;" src="./images/induction.png" alt="">
-          </div>
-          <div class="card-body">
-            <h5 style="text-align: center; color: white;" class="card-title">induction</h5>
-          </div>
-        </a>
-      </div>
-
-
     </div> 
 </div>
 
 
 
 
+
+
+
+
 <!-- ---------------------------------dynammic-id-card-image------------------------ -->
-<div class="context">
+<!-- <div class="context">
   <h2>Why are You Wating..Get Your AC Now </h2>
 </div>
 
 <div class="id-image">
   <img class="id-image" style="margin-left:10px; margin-top: 50px; width:450px; border-radius: 40%;" src="./images/ac.png" alt="">1
-</div>
+</div> -->
 
 <!-- ------------------flip card-1------------------ -->
-<div  class="widget-container">
+<!-- <div  class="widget-container">
   <div class="flip-box common-flip-style">
     <div class="box-front common-box-style" style="margin-top: 50px;">
       <div class="box-content-wrapper">
@@ -196,11 +490,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
   
 
 <!-- -----------------------------flip-card-1---------------------- -->
-  <div style="margin-left: 1100px; " class="widget-container">
+  <!-- <div style="margin-left: 1100px; " class="widget-container">
     <div class="flip-box common-flip-style">
       <div class="box-front common-box-style" style="background-image: url(./images/dark-id-3.jpg); margin-top: -100px;">
         <div class="box-content-wrapper">
@@ -213,11 +507,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 <!-- -----------------------------background animation------------------ -->
 
-<div class="area" >
+<!-- <div class="area" >
       <ul style="z-index: -1;" class="circles">
               <li></li>
               <li></li>
@@ -230,10 +524,7 @@
               <li></li>
               <li></li>
       </ul>
-</div >
-
-
-
+</div > -->
 
 
 
@@ -241,6 +532,8 @@
 
 
 <!-- --------------------about-us---------------------- -->
+
+<section id="about_us">
 <div style="margin-top: 200px;" id="about-main">
   <div style="background-color: transparent;" class="jumbotron">
       <div class="jumbotron-inner">
@@ -255,27 +548,36 @@
               </div>
           </div>
       </div>
-      <div class="img-layer-container">
+      <div class="img-layer-container" >
           <div class="team-image" id="team-image">
-              <img src="https://apimatic.io/img/theme/aboutUs/images-1.png" />
+              <img style="width: 85%; margin-top: -5%; margin-left: 5%; z-index: 1;" src="./images/all-products.png" />
           </div>
 
-          <div class="circles-container">
-              <div class="img-1">
-                  <img src="https://apimatic.io/img/theme/aboutUs/Circles-1-1.svg" />                        
+          <div style="z-index: -1;" class="circles-container">
+              <div style="z-index: -1;" class="img-1">
+                  <img style="z-index: -1;" src="https://apimatic.io/img/theme/aboutUs/Circles-1-1.svg" />                        
               </div>
-              <div class="img-2">
-                  <img src="https://apimatic.io/img/theme/aboutUs/Circles-2-1.svg" />                        
+              <div style="z-index: -1;" class="img-2">
+                  <img style="z-index: -1;" src="https://apimatic.io/img/theme/aboutUs/Circles-2-1.svg" />                        
               </div>                    
           </div>           
       </div>
   </div>
 </div>
+</section>
 
 
 
 
+<!-- -------------------------------whatsapp-floting-button---------------------------- -->
 
+<div class="whatsapp-floating_btn">
+  <a style="text-decoration: none;" href="https://wa.me/9999102246">
+    <div class="whatsapp-contact_icon">
+      <i class="fa fa-whatsapp my-float"></i>
+    </div>
+  </a>
+</div>
 
 <!-- <div style="height: 600px;">
   <div style="width: 90%; margin-left: auto; margin-right: auto;" class="master">
@@ -289,8 +591,21 @@
 
 
 
-    <!-- Site footer -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Site footer -->
+    <section id="contact_us">
     <footer class="site-footer">
       <div class="footer-inner-container" >
         <div class="row">
@@ -298,11 +613,11 @@
             <div class="no">
               <!-- Links -->
               <h3 class="quick-contact-heading" style="color: rgba(245, 245, 245, 0.87);">Quick Contact</h3>
-              <p class="footer-contact-spacing footer-text" style="color: rgba(245, 245, 245, 0.616); font-family: Audiowide;"><i class="fa fa-building-o me-3"></i>Printnagri</p>
+              <p class="footer-contact-spacing footer-text" style="color: rgba(245, 245, 245, 0.616); font-family: Audiowide;"><i class="fa fa-building-o me-3"></i>Faair Deals Rent And Services</p>
               <p class="footer-contact-spacing footer-text" style="color: rgba(245, 245, 245, 0.616);"><i class="fa fa-map-marker me-3"></i> Noida</p>
-              <p class="footer-text" style="color: rgba(245, 245, 245, 0.616);"><i class="fa fa-envelope me-3 "></i>info@printnagri.com</p>
-              <p class="footer-text" style="color: rgba(245, 245, 245, 0.616); margin-left: -5px;"><i class="fa fa-phone me-3" style="rotate:90deg"></i>  +91-xxxxxxxxxx </p>
-              <P class="lft footer-text" style="color: rgba(245, 245, 245, 0.616);">+91-xxxxxxxxxx </P>
+              <p class="footer-text" style="color: rgba(245, 245, 245, 0.616);"><i class="fa fa-envelope me-3 "></i>info@fairdeals.com</p>
+              <p class="footer-text" style="color: rgba(245, 245, 245, 0.616); margin-left: -5px;"><i class="fa fa-phone me-3" style="rotate:90deg"></i>  +91-9999102246 </p>
+              <!-- <P class="lft footer-text" style="color: rgba(245, 245, 245, 0.616);">+91-xxxxxxxxxx </P> -->
               
             </div>
           </div>
@@ -310,21 +625,20 @@
           <div class="col-sm-12 col-md-12 col-lg-4">
             <h3 class="general-links-heading" style="color: rgba(245, 245, 245, 0.87);">General Links</h3>
             <ul class="footer-links footer-text">
-              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="index.html">Home</a></li>
-              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="about_us.html">About us</a></li>
-              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="/product_pages/contact_us.html">Contact us</a></li>
+              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">Home</a></li>
+              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#about_us">About us</a></li>
+              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#contact_us">Contact us</a></li>
             </ul>
           </div>
   
           <div class="col-sm-12 col-md-12 col-lg-3">
-            <h3 class="general-links-heading" style="color: rgba(245, 245, 245, 0.87);">FAQ & HELP</h3>
+            <h3 class="general-links-heading" style="color: rgba(245, 245, 245, 0.87);">Best Deals</h3>
             <ul class="footer-links footer-text">
-              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">FAQ's</a></li>
-              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">How to Order</a></li>
-              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">Franchise</a></li>
-              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">Reseller</a></li>
-              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">Refund & Return Policy</a></li>
-              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">CAREER</a></li>
+              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">Air Conditioner</a></li>
+              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">Fridge</a></li>
+              <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">Washing Machine</a></li>
+              <!-- <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">Reseller</a></li> -->
+              <!-- <li><a style=" text-decoration: none; color: rgba(245, 245, 245, 0.616);" href="#">Refund & Return Policy</a></li> -->
             </ul>
           </div>
         </div>
@@ -333,7 +647,7 @@
       <div class="footer-inner-container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="terms-paragraph" >This Site Is Managed By  <u style="font-family: Audiowide;">(SNIT)</u></p>
+            <p class="terms-paragraph" >This Site Is Managed By  <u style="font-family: Audiowide;">(Fair Deals Rentals And Services)</u></p>
           </div>
   
           <div class="col-md-4 col-sm-6 col-xs-12">
@@ -341,13 +655,19 @@
               <li><a class="facebook" href=""><i class="fa fa-facebook"></i></a></li>
               <li><a class="icoInstagram" href=""><i class="fa fa-instagram"></i></a></li>
               <li><a class="linkedin" href=""><i class="fa fa-youtube-play"></i></a></li>
-              <li><a class="whatsapp" href="https://wa.me/"><i class="fa fa-whatsapp"></i></a></li>   
+              <li><a class="whatsapp" href="https://wa.me/9999102246"><i class="fa fa-whatsapp"></i></a></li>   
               
             </ul>
           </div>
         </div>
       </div>
   </footer>
+</section>
+
+  
+  
+  
+  
 
 </body>
 </html>
